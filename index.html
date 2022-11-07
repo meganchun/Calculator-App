@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator App</title>
+    <meta charset="UTF-8">
+    <!-- connect html and css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Title -->
+<h1 class="title">Calculator App</h1>
+
+
+<table class="calculator">
+
+    <!-- table row -->
+    <tr>
+        <!-- table data -->
+        <td colspan="3"><input type="text" class="display-box" id="result" disabled></td>
+        <td><input class="button" id="clear" type="button" value="C" onclick="clearScreen()"></td>
+    </tr>
+
+    <tr>
+        <!-- on click, the program will run the function display -->
+        <td><input class="button" type="button" onclick="display('1')" value="1"></td>
+        <td><input class="button" type="button" onclick="display('2')" value="2"></td>
+        <td><input class="button" type="button" onclick="display('3')" value="3"></td>
+        <td><input class="button" type="button" onclick="display('/')" value="/"></td>  
+    </tr>
+
+    <tr>
+        <td><input class="button" type="button" onclick="display('4')" value="4"></td>
+        <td><input class="button" type="button" onclick="display('5')" value="5"></td>
+        <td><input class="button" type="button" onclick="display('6')" value="6"></td>
+        <td><input class="button" type="button" onclick="display('-')" value="-"></td>
+    </tr>
+
+    <tr>
+        <td><input class="button" type="button" onclick="display('7')" value="7"></td>
+        <td><input class="button" type="button" onclick="display('8')" value="8"></td>
+        <td><input class="button" type="button" onclick="display('9')" value="9"></td>
+        <td><input class="button" type="button" onclick="display('+')" value="+"></td>
+    </tr>
+
+    <tr>
+        <td><input class="button" type="button" onclick="display('.')" value="."></td>
+        <td><input class="button" type="button" onclick="display('0')" value="0"></td>
+        <td><input class="button" id="calculate" type="button" onclick="calculate()" value="="></td>
+        <td><input class="button" type="button" onclick="display('*')" value="*"></td>
+    </tr>
+
+</table>
+
+<!-- connect html and js -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
